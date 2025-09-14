@@ -6,4 +6,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - run: where make
+      - run: |
+          Get-Command g++
+          Get-Command git
+          Get-Command make
